@@ -2,7 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { createBrowserHistory } from 'history';
 
@@ -14,7 +14,7 @@ const history = syncHistoryWithStore(createBrowserHistory(), store);
 
 render(
   <Provider store={store}>
-      <Router history={history}>
+      <Router>
          <App />
       </Router>
    </Provider>,

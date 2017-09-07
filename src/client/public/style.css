@@ -410,6 +410,26 @@ template {
 h1, h2, h3, h4, p, a, div {
    font-family: Calibri, sans-serif
 }
+.gallery__main___2PCw4 {
+   width: 100%;
+   background: green;
+   min-height: 200px;
+}
+.artContainer__main___TmUcg {
+   background: blue;
+   height: 100%;
+   left: 0;
+   right: 0;
+}
+.page__layout___t2290 {
+   height: 100%;
+   width: 100%;
+}
+
+.page__content___a1Mi8 {
+   margin-top: 100px;
+   width: 100%;
+}
 .header__header___27YCq {
    position: fixed;
    top: 0;
@@ -622,8 +642,4 @@ h1, h2, h3, h4, p, a, div {
       margin: 0px 10px;
       font-weight: 100;
    }
-}
-.layout__layout___3x4MC {
-   height: 1vh;
-   width: 1vw;
 }

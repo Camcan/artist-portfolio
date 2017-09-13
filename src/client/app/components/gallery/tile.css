@@ -1,0 +1,36 @@
+.main {
+   margin: 5px;
+   height: 200px;
+   width: 300px;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   filter: grayscale(100%);
+   transition: opacity 0.4s ease-out, filter 1s ease-in-out;
+}
+
+.reveal {
+   opacity: 1;
+   filter: none;
+}
+
+@media screen and (min-width: 550px){
+   .main{
+      height: 250px;
+      width: 40%;
+   }
+}
+@media screen and (min-width: 1000px){
+   .main{
+      width: 20%;
+      height: 300px;
+   }
+}
+@media screen and (min-width: 1600px){
+   .main{
+      min-width: 300px;
+      max-width: 400px;
+   }
+}

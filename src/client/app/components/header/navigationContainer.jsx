@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 import NavigationDesktop from './navigationDesktop.jsx';
 import NavigationMobile from './navigationMobile.jsx';
-import Styles from './navigationContainer.css';
+import Styles from './navigation.css';
 import { Link } from 'react-router-dom';
 
 import Routes from '../../routes.js';

@@ -8,8 +8,8 @@ class Header extends Component {
    render(){ 
       return ( 
          <div className={Styles.header}>
-            <Link to='/'>
-               <h2 className={Styles.title}>Rebecca Hawkes</h2>
+            <Link to='/'  className={Styles.title}>
+               <p>Rebecca Hawkes</p>
             </Link>
             <NavigationContainer />
          </div>

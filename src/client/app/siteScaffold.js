@@ -3,7 +3,7 @@ import React from 'react';
 export default {
    owner: "Rebecca Hawkes",
    home: {
-      opener: <div style={{fontStyle: "italic", textAlign: "center", lineHeight: "8px"}}>
+      opener: <div style={{fontStyle: "italic", textAlign: "center", lineHeight: "11px"}}>
          <p>Rebecca Hawkes</p>
          <p>artist & writer</p>
          <p>moving light around until it means something</p>

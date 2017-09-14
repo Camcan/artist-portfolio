@@ -9,9 +9,9 @@ export default class ArtContainer extends Component {
    render () {
       return (
                <div className={Styles.main}>
-                  <p className={Styles.openerText}>
+                  <div className={Styles.openerText}>
                      {this.props.opener}
-                  </p>
+                  </div>
                </div>
             )
    }

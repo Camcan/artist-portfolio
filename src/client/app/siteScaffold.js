@@ -1,15 +1,27 @@
+import React from 'react';
+
 export default {
    home: {
       opener: "Gummies cheesecake pie lollipop gummi bears halvah. Cookie sweet roll ice cream sweet cupcake cookie sugar plum dragée cotton candy. Cake fruitcake tart sweet roll cookie tart toffee pie.",
       gallery: [
-         { img: "https://unsplash.it/800/?random"},
-         { img: "https://unsplash.it/600/?random"},
-         { img: "https://unsplash.it/900/?random"},
-         { img: "https://unsplash.it/500/?random"}
+         { img: "./img/landing/1st.jpg"},
+         { img: "./img/landing/2nd.jpg"},
+         { img: "./img/landing/3rd.jpg"},
+         { img: "./img/landing/4th.jpg"}
       ] 
    },
    about: {
-      opener: "I am a diligent, passionate Media Studies scholar pursuing an academic career at the intersection of digital humanities, media, and affect studies. In 2016 I completed an MA in Creative writing with Distinction from the International Institute of Modern Letters, and have had poems and prose accepted for various online and print journals. Alongside my academic and literary work, I have maintained a practice in visual arts as a painter, sculptor, and dancer. I have exhibited artwork regularly in Wellington during my studies here, curating group exhibitions as well as producing my own creative bodies of work.",
+      opener: <span>
+         <p>
+            I’m a freelance oil painter, poet, illustrator and sculptor. Raised roaming valleys of honeydewed beech forest and tussock-clad alpine farmland in the mid-Canterbury high country, I am now based in the windy city of Wellington, New Zealand. I relish in working across multiple media and my recent projects include paintings, sculptures, digital illustration, zines, murals, poetry, and lyric essays.
+         </p>
+         <p>
+            My visual artwork is informed by the “natural” world and botanical illustration; mythology, symbolism, and the occult; and lived experiences traversing the cultural performance of femininity and queer sexuality. I aim to make art that evokes a bodily rawness and fervency, and reveals the inherent tension between notions of the grotesque and the beautiful.
+         </p>
+         <p>
+            In 2012 I was awarded the national NZQA award for Top Scholar in Painting after my NCEA assessments and scholarship submission. I have continued to grow an artistic practice alongside my academic studies, regularly taking on commissioned works. I have also arranged and curated three exhibitions in central Wellington to showcase not only my own work but other emerging artists’ as well.
+         </p>
+         </span>,
       resumePath: "./pdf/RebeccaHawkesCV-2017.pdf", 
       academicHistory: [
          { 
@@ -31,7 +43,7 @@ export default {
                      {
                         title: "Masters in Creative Writing (Nonfiction)",
                         institute: "International Institute of Modern Letters",
-                        grade: "with destinction"
+                        grade: "with distinction"
                      },
                      {
                         title: "Co-President of VUW Media Society"

@@ -448,27 +448,26 @@ a {
    transition: opacity 0.4s ease-out, filter 1s ease-in-out;
    transition: opacity 0.4s ease-out, filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
 }
-
+.tile__tileImg___TnWOR {
+   max-width: 500px; 
+}
 .tile__reveal___OxG-T {
    opacity: 1;
    -webkit-filter: none;
            filter: none;
 }
-
 @media screen and (min-width: 550px){
    .tile__main___30vVx{
       height: 250px;
       width: 40%;
    }
 }
-
 @media screen and (min-width: 1000px){
    .tile__main___30vVx{
       width: 20%;
       height: 300px;
    }
 }
-
 @media screen and (min-width: 1600px){
    .tile__main___30vVx{
       min-width: 300px;

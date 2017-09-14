@@ -3,7 +3,11 @@ import React from 'react';
 export default {
    owner: "Rebecca Hawkes",
    home: {
-      opener: "Gummies cheesecake pie lollipop gummi bears halvah. Cookie sweet roll ice cream sweet cupcake cookie sugar plum dragée cotton candy. Cake fruitcake tart sweet roll cookie tart toffee pie.",
+      opener: <div style={{fontStyle: "italic", textAlign: "center", lineHeight: "8px"}}>
+         <p>Rebecca Hawkes</p>
+         <p>artist & writer</p>
+         <p>moving light around until it means something</p>
+      </div>,
       gallery: [
          { img: "./img/landing/1st.jpg"},
          { img: "./img/landing/2nd.jpg"},

@@ -426,6 +426,7 @@ a {
    -webkit-box-pack: center;
        -ms-flex-pack: center;
            justify-content: center;
+   padding-bottom: 30px;
 }
 .tile__main___30vVx {
    margin: 5px;
@@ -654,6 +655,39 @@ a {
    max-width: 400px;
    margin: 5px;
 }
+.footer__main___3jh1L {
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
+   height: 20px;
+   background: rgba(255,255,255, 0.3);
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-flow: row nowrap;
+           flex-flow: row nowrap;
+   -webkit-box-pack: end;
+       -ms-flex-pack: end;
+           justify-content: flex-end;
+}
+
+.footer__cpr___1m7CQ, .footer__creator___30VN0 {
+   margin: 0px 5px;
+   font-size: 10px;
+}
+
+.footer__creator___30VN0, .footer__creator___30VN0 a {
+   color: #000;
+   opacity: 0.7;
+   transition: 0.3s opacity
+}
+
+.footer__creator___30VN0:hover {
+   opacity: 1
+}
+
 .header__header___27YCq {
    position: fixed;
    top: 0;
@@ -868,7 +902,8 @@ a {
    }
 }
 .page__layout___2jmNd {
-   height: 100%;
+   position: relative;
+   min-height: 100%;
    width: 100%;
 }
 

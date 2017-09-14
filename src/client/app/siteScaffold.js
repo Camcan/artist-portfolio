@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default {
+   owner: "Rebecca Hawkes",
    home: {
       opener: "Gummies cheesecake pie lollipop gummi bears halvah. Cookie sweet roll ice cream sweet cupcake cookie sugar plum dragée cotton candy. Cake fruitcake tart sweet roll cookie tart toffee pie.",
       gallery: [

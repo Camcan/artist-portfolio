@@ -6,6 +6,7 @@ import site from './siteScaffold.js';
 import Layout from './components/page/layout.jsx';
 import Content from './components/page/content.jsx';
 import Header from './components/header/index.jsx';
+import Footer from './components/page/footer.jsx';
 import Opener from './components/page/opener.jsx';
 import Home from './components/home/index.jsx';
 import About from './components/about/index.jsx';
@@ -30,25 +31,26 @@ export default class App extends Component {
       return (
             <Layout>  
                <div style={{zIndex: 2}}>
-               <Header />
-               <Content>
-                  <Switch>
-                     <Route exact path={"/"}>
-                        <Home>
-                           <Opener opener={site.home.opener} />
-                           <Gallery items={site.home.gallery} />
-                        </Home>
-                     </Route>
-                     <Route path="/about">
-                        <About content={site.about}/>
-                     </Route>
-                     <Route path="/art">
-                        <ArtContainer>
-                           <Gallery />
-                        </ArtContainer> 
-                     </Route>
-                  </Switch>
+                  <Header />
+                  <Content>
+                     <Switch>
+                        <Route exact path={"/"}>
+                           <Home>
+                              <Opener opener={site.home.opener} />
+                              <Gallery items={site.home.gallery} />
+                           </Home>
+                        </Route>
+                        <Route path="/about">
+                           <About content={site.about}/>
+                        </Route>
+                        <Route path="/art">
+                           <ArtContainer>
+                              <Gallery />
+                           </ArtContainer> 
+                        </Route>
+                     </Switch>
                   </Content>
+                  <Footer owner={site.owner} />
                </div>
             </Layout>
       )

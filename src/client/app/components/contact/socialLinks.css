@@ -1,0 +1,21 @@
+.main {
+   padding-top: 50px;
+   left: 0;
+   right: 0;
+}
+
+.main a{
+   height: 35px;
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   justify-content: flex-start;
+}
+.main a p {
+   opacity: 0.5;
+   transition: 0.3s linear
+}
+.main a:hover p {
+   opacity: 1;
+}
+

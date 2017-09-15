@@ -9,9 +9,10 @@ import Header from './components/header/index.jsx';
 import Footer from './components/page/footer.jsx';
 import Opener from './components/page/opener.jsx';
 import Home from './components/home/index.jsx';
-import About from './components/about/index.jsx';
 import ArtContainer from './components/art/index.jsx';
 import Gallery from './components/gallery/index.jsx';
+import About from './components/about/index.jsx';
+import Contact from './components/contact/index.jsx';
 import './css/normalize.css';
 import './css/base.css';
 
@@ -43,10 +44,8 @@ export default class App extends Component {
                         <Route path="/about">
                            <About content={site.about}/>
                         </Route>
-                        <Route path="/art">
-                           <ArtContainer>
-                              <Gallery />
-                           </ArtContainer> 
+                        <Route path="/contact">
+                           <Contact content={site.contact} /> 
                         </Route>
                      </Switch>
                   </Content>

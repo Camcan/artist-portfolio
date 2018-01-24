@@ -1,3 +1,18 @@
+.app__sliderContainer___38mf3 {
+   overflow: hidden;
+   width: 100%;
+}
+.app__sliderContent___2Gjkl {
+   position: relative;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-flow: row nowrap;
+           flex-flow: row nowrap;
+   transition: all 0.5s ease-out
+}
 /* correct the line height in all browsers.
 * 2. Prevent adjustments of font size after orientation changes in
 *  *    IE on Windows Phone and in iOS.
@@ -413,74 +428,116 @@ h1, h2, h3, h4, p, a, div {
 a {
    text-decoration: none;
 }
-.gallery__main___1KuhM {
-   width: 100%;
-   min-height: 200px;
+.contact__main___3yMZO {
+   padding-top: 50px;
+   left: 0;
+   right: 0;
+}
+
+.contact__details___404ac {
+   max-width: 420px;
+   margin: 0px auto;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-flow: column nowrap;
+           flex-flow: column nowrap;
+   -webkit-box-align: start;
+       -ms-flex-align: start;
+           align-items: flex-start;
+}
+
+.contact__details___404ac a {
+   height: 35px;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
    -webkit-box-orient: horizontal;
    -webkit-box-direction: normal;
-       -ms-flex-flow: row wrap;
-           flex-flow: row wrap;
-   -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           justify-content: center;
-   padding-bottom: 30px;
-}
-.tile__main___30vVx {
-   margin: 5px;
-   height: 200px;
-   width: 300px;
-   overflow: hidden;
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
+       -ms-flex-flow: row nowrap;
+           flex-flow: row nowrap;
+   -webkit-box-align: start;
+       -ms-flex-align: start;
+           align-items: flex-start;
    -webkit-box-align: center;
        -ms-flex-align: center;
            align-items: center;
    -webkit-box-pack: center;
        -ms-flex-pack: center;
            justify-content: center;
-   opacity: 0;
-   -webkit-filter: grayscale(100%);
-           filter: grayscale(100%);
-   transition: opacity 0.4s ease-out, -webkit-filter 1s ease-in-out;
-   transition: opacity 0.4s ease-out, filter 1s ease-in-out;
-   transition: opacity 0.4s ease-out, filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
-}
-.tile__tileImg___TnWOR {
-   max-width: 500px; 
-}
-.tile__reveal___OxG-T {
+   color: #000;
    opacity: 1;
    -webkit-filter: none;
            filter: none;
+   transition: opacity 0.3s linear, -webkit-transform 0.2s linear;
+   transition: opacity 0.3s linear, transform 0.2s linear;
+   transition: opacity 0.3s linear, transform 0.2s linear, -webkit-transform 0.2s linear;
 }
-@media screen and (min-width: 550px){
-   .tile__main___30vVx{
-      height: 250px;
-      width: 40%;
+
+.contact__details___404ac > a:hover {
+   opacity: 0.8;
+   -webkit-transform: scale(0.99);
+           transform: scale(0.99)
+}
+
+.contact__details___404ac a:active {
+   -webkit-filter: invert(100%);
+           filter: invert(100%)
+}
+
+.contact__details___404ac a svg {
+   padding-right: 20px;
+   width: 24px;
+   height: 24px;
+}
+
+@media screen and (min-width: 600px){
+   .contact__details___404ac{
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
    }
 }
-@media screen and (min-width: 1000px){
-   .tile__main___30vVx{
-      width: 20%;
-      height: 300px;
+
+@media screen and (min-width: 1200px){
+   .contact__main___3yMZO{
+      padding-top: 100px;
    }
 }
-@media screen and (min-width: 1600px){
-   .tile__main___30vVx{
-      min-width: 300px;
-      max-width: 400px;
-   }
-}
-.artContainer__main___TmUcg {
-   background: blue;
-   height: 100%;
+.socialLinks__main___UJWAD {
+   padding-top: 50px;
    left: 0;
    right: 0;
 }
+
+.socialLinks__main___UJWAD a{
+   height: 35px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-flow: row nowrap;
+           flex-flow: row nowrap;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: start;
+       -ms-flex-pack: start;
+           justify-content: flex-start;
+}
+
+.socialLinks__main___UJWAD a p {
+   opacity: 0.5;
+   transition: 0.3s linear
+}
+
+.socialLinks__main___UJWAD a:hover p {
+   opacity: 1;
+}
+
 .about__main___Q_CXm {
    padding-top: 50px;
    left: 0;
@@ -632,6 +689,74 @@ a {
       margin-left: 50px;
       padding-bottom: 20px;
    }
+}
+.gallery__main___1KuhM {
+   width: 100%;
+   min-height: 200px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-flow: row wrap;
+           flex-flow: row wrap;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   padding-bottom: 30px;
+}
+.tile__main___30vVx {
+   margin: 5px;
+   height: 200px;
+   width: 300px;
+   overflow: hidden;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   opacity: 0;
+   -webkit-filter: grayscale(100%);
+           filter: grayscale(100%);
+   transition: opacity 0.4s ease-out, -webkit-filter 1s ease-in-out;
+   transition: opacity 0.4s ease-out, filter 1s ease-in-out;
+   transition: opacity 0.4s ease-out, filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
+}
+.tile__tileImg___TnWOR {
+   max-width: 500px; 
+}
+.tile__reveal___OxG-T {
+   opacity: 1;
+   -webkit-filter: none;
+           filter: none;
+}
+@media screen and (min-width: 550px){
+   .tile__main___30vVx{
+      height: 250px;
+      width: 40%;
+   }
+}
+@media screen and (min-width: 1000px){
+   .tile__main___30vVx{
+      width: 20%;
+      height: 300px;
+   }
+}
+@media screen and (min-width: 1600px){
+   .tile__main___30vVx{
+      min-width: 300px;
+      max-width: 400px;
+   }
+}
+.artContainer__main___TmUcg {
+   background: blue;
+   height: 100%;
+   left: 0;
+   right: 0;
 }
 .home__main___2jdiP {
    left: 0;

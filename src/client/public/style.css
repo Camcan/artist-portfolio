@@ -430,8 +430,7 @@ a {
 }
 .contact__main___3yMZO {
    padding-top: 50px;
-   left: 0;
-   right: 0;
+   width: 100%;
 }
 
 .contact__details___404ac {
@@ -540,8 +539,7 @@ a {
 
 .about__main___Q_CXm {
    padding-top: 50px;
-   left: 0;
-   right: 0;
+   width: 100%;
 }
 
 .about__resumeContainer___l9A6F {
@@ -759,8 +757,7 @@ a {
    right: 0;
 }
 .home__main___2jdiP {
-   left: 0;
-   right: 0;
+   width: 100%;
 }
 
 @media screen and (min-width: 1200px){

@@ -25,7 +25,7 @@ class App extends Component {
       super(props)
       this.state = {
          ...props,
-         width: '100%',
+         width: window.innerWidth,
          routes: Routes,
          sliderOffset: 0,
          sliderWidth: Routes.length * 100 + "%",
@@ -35,9 +35,10 @@ class App extends Component {
       this.updateDimensions();
       this.changeRoute = this.changeRoute.bind(this);
       this.initialSlider = this.initialSlider.bind(this);
+      this.changeRoute();
    }
    changeRoute(path = this.state.route){
-      path = path.split('/')[0] 
+      path = path.split('/')[1];
       console.log("ChangeRoute:", path)
       for (var z=0; z < Routes.length; z++) {
          if (Routes[z][1] == path) {
@@ -48,14 +49,17 @@ class App extends Component {
    updateDimensions() {
 
             var w = window, 
-                d = document, 
-                documentElement = d.documentElement,
+               d = document, 
+               dE= d.documentElement,
                body = d.getElementsByTagName('body')[0],
-               width = w.innerWidth || documentElement.clientWidth || body.clientWidth,
-               height = w.innerHeight|| documentElement.clientHeight|| body.clientHeight,
+               width = (w.innerWidth) ? w.innerWidth : (dE) ? dE.clientWidth : body.clientWidth,
+               height = (w.innerHeight) ? w.innerHeight : (dE) ? dE.clientHeight : body.clientHeight,
                sliderWidth = this.state.routes.length * width;
             console.log("NewSize:", width, height)
-            this.setState({width: width, height: height, sliderWidth: sliderWidth
+            this.setState({
+               width: width, 
+               height: height, 
+               sliderWidth: sliderWidth
             });
       
    }         
@@ -75,7 +79,7 @@ class App extends Component {
    initialSlider(offset = 0){
       console.log("INITIALSLIDERFUNC: Offset", offset, this.state.routes.length);
       let sliderOffset = offset * this.state.width;
-      let sliderWidth = this.state.routes.length * this.state.width;
+      let sliderWidth = this.state.routes.length * this.state.width;;
       console.log("sliderOffset", sliderOffset, "sliderWidth", sliderWidth, "Width", this.state.width, "RoutesLength", this.state.routes.length)
       this.setState({
          sliderWidth: sliderWidth,
@@ -90,7 +94,7 @@ class App extends Component {
    render () {
       let sliderStyles = {
          width: this.state.sliderWidth,
-         left:  this.state.sliderOffset
+         left:  -this.state.sliderOffset
       }
       console.log(sliderStyles, this.state.width)
       return (

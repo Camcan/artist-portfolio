@@ -19,7 +19,7 @@ export default class Gallery extends Component {
       ].join(" ");
       return (
                <div className={tileStyle}>
-                  <img src={this.state.img} onLoad={this.loaded.bind(this)}  />
+                  <img className={Styles.tileImg} src={this.state.img} onLoad={this.loaded.bind(this)}  />
                </div>
             )
    }

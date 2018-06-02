@@ -91,7 +91,7 @@
    position: absolute
 }
 .linkList {
-   height: 50%;
+   min-height: 180px;
    max-height: 300px;
    display: flex;
    flex-flow: column wrap;

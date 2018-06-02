@@ -20,7 +20,19 @@
 }
 
 .header .title {
+   z-index: 4;
    letter-spacing: 3px;
    font-weight: normal;
    margin: 7px 0px;
+}
+.title p {
+   margin: 0px;
+   font-size: 30px;
+}
+
+@media screen and (min-width: 1000px){
+   .title p {
+      font-size: 35px;
+   }
+
 }
